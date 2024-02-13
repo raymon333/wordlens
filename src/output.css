@@ -544,6 +544,66 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
+.-left-8 {
+  left: -2rem;
+}
+
+.right-0 {
+  right: 0px;
+}
+
+.top-0 {
+  top: 0px;
+}
+
+.-top-5 {
+  top: -1.25rem;
+}
+
+.-top-4 {
+  top: -1rem;
+}
+
+.-top-6 {
+  top: -1.5rem;
+}
+
+.-top-7 {
+  top: -1.75rem;
+}
+
+.-top-\[0\.99rem\] {
+  top: -0.99rem;
+}
+
+.left-2 {
+  left: 0.5rem;
+}
+
+.right-2 {
+  right: 0.5rem;
+}
+
+.right-8 {
+  right: 2rem;
+}
+
+.right-3 {
+  right: 0.75rem;
+}
+
+.right-1 {
+  right: 0.25rem;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -561,12 +621,32 @@ video {
   margin-top: 1.25rem;
 }
 
+.mt-16 {
+  margin-top: 4rem;
+}
+
+.mt-4 {
+  margin-top: 1rem;
+}
+
+.mt-3 {
+  margin-top: 0.75rem;
+}
+
+.ml-2 {
+  margin-left: 0.5rem;
+}
+
 .block {
   display: block;
 }
 
 .flex {
   display: flex;
+}
+
+.inline-flex {
+  display: inline-flex;
 }
 
 .hidden {
@@ -585,6 +665,14 @@ video {
   height: 3rem;
 }
 
+.h-10 {
+  height: 2.5rem;
+}
+
+.h-14 {
+  height: 3.5rem;
+}
+
 .w-32 {
   width: 8rem;
 }
@@ -600,6 +688,18 @@ video {
 
 .max-w-6xl {
   max-width: 72rem;
+}
+
+.max-w-5xl {
+  max-width: 64rem;
+}
+
+.max-w-4xl {
+  max-width: 56rem;
+}
+
+.max-w-3xl {
+  max-width: 48rem;
 }
 
 .cursor-pointer {
@@ -622,6 +722,18 @@ video {
   --tw-space-y-reverse: 0;
   margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(1rem * var(--tw-space-y-reverse));
+}
+
+.space-y-24 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(6rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(6rem * var(--tw-space-y-reverse));
+}
+
+.space-x-4 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(1rem * var(--tw-space-x-reverse));
+  margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
 .rounded {
@@ -694,6 +806,10 @@ video {
   padding-top: 2rem;
 }
 
+.text-start {
+  text-align: start;
+}
+
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
@@ -702,6 +818,11 @@ video {
 .text-6xl {
   font-size: 3.75rem;
   line-height: 1;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
 }
 
 .font-medium {
@@ -715,4 +836,14 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+@media (min-width: 768px) {
+  .md\:flex {
+    display: flex;
+  }
+
+  .md\:hidden {
+    display: none;
+  }
 }
