@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+  <htm>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./output.css" />
+  
     <style></style>
   </head>
   <body>
@@ -66,29 +67,22 @@
         <h2 class="text-6xl font-medium">for any word.</h2>
       </div>
 
-      <div class="md:hidden">
-        <input
-          class="w-full h-12 border-2 border-slate-300 rounded p-2"
-          type="text"
-          placeholder="What would you like to search?"
-        />
-        <button class="w-full mt-5 h-12 p-3 bg-black rounded text-white mb-20">
-          Search
-        </button>
-      </div>
+    
+        <form class="flex flex-col md:relative" onsubmit="return submitSearch(event)">
+          <input
+            name="wordinput"
+            class="w-full h-12 md:h-14 border-2 border-slate-300 rounded p-2"
+            type="text"
+            placeholder="What would you like to search?"
+          />
 
-      <div class="relative hidden md:flex">
-        <input
-          class="w-full h-14 border-2 border-slate-300 rounded p-2"
-          type="text"
-          placeholder="What would you like to search?"
-        />
-        <button
-          class="mt-5 h-12 p-3 bg-black rounded text-white mb-20 absolute right-1 -top-[0.99rem]"
-        >
-          Search
-        </button>
-      </div>
+          <button type="submit" id="my-button" class="md:absolute md:w-28 md:right-1 md:-top-[0.99rem] w-full mt-5 h-12 p-3 bg-black rounded text-white mb-20">
+            Search
+          </button>
+        </form>
+  <section>
+    
+  </section>
     </main>
 
     <footer
@@ -461,5 +455,7 @@
         Copyright © 2021 Wordlens. All rights reserved.
       </p>
     </footer>
+
+    <script src="./index.js"></script>
   </body>
 </html>

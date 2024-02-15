@@ -809,6 +809,22 @@ video {
 }
 
 @media (min-width: 768px) {
+  .md\:absolute {
+    position: absolute;
+  }
+
+  .md\:relative {
+    position: relative;
+  }
+
+  .md\:-top-\[0\.99rem\] {
+    top: -0.99rem;
+  }
+
+  .md\:right-1 {
+    right: 0.25rem;
+  }
+
   .md\:mt-20 {
     margin-top: 5rem;
   }
@@ -829,8 +845,20 @@ video {
     display: none;
   }
 
+  .md\:h-14 {
+    height: 3.5rem;
+  }
+
   .md\:max-h-10 {
     max-height: 2.5rem;
+  }
+
+  .md\:w-10 {
+    width: 2.5rem;
+  }
+
+  .md\:w-28 {
+    width: 7rem;
   }
 
   .md\:max-w-10 {
